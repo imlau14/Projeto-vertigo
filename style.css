@@ -11,6 +11,7 @@ font-family: 'Titillium Web', sans-serif;
     --gray-400: #94A3B8;
     --gray-200: #E2E8F0;
     --purple: #7C3AED;
+    --light-purple: #9f67ff
     --white: #fff;
 }
 
@@ -112,6 +113,13 @@ main {
     color: var(--white);
 }
 
+.login button:hover {
+    background: var(--light-purple);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
 .login > p {
     color: var(--gray-600);
 }
@@ -149,10 +157,21 @@ main {
 
     .conteudo {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .bg-desktop {
         display: block;
         width: 100%;
+    }
+
+    .descricao h1 {
+        font-size: 2.25rem;
+    }
+
+    .descricao p {
+        font-size: 1rem;
     }
 }
